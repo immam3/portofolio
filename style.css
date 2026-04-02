@@ -1,0 +1,103 @@
+css
+/* Mengatur font dan warna latar belakang seluruh halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Warna abu-abu sangat muda */
+    color: #333;
+}
+
+/* Mengatur bagian Header (paling atas) */
+header {
+    background-color: #2c3e50; /* Warna biru gelap */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mengatur kotak konten (About & Skills) */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+}
+
+/* Mengatur judul h2 */
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Mengatur daftar skill */
+ul {
+    list-style-type: square;
+}
+
+/* Mengatur bagian Footer (paling bawah) */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+/* Mengatur tampilan foto profil */
+.foto-profile {
+    width: 150px;           /* Lebar foto */
+    height: 150px;          /* Tinggi foto */
+    border-radius: 50%;     /* Membuat foto jadi bulat sempurna */
+    object-fit: cover;      /* Agar foto tidak terlihat gepeng */
+    border: 4px solid rgb(0, 0, 0); /* Memberi bingkai putih di pinggir foto */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Memberi sedikit bayangan */
+    margin-bottom: 25px;    /* Memberi jarak bawah ke nama Anda */
+}
+/* Gaya untuk tombol */
+.tombol-interaktif {
+    padding: 10px 20px;
+    background-color: #f1c40f; /* Warna kuning */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Mengatur wadah tombol sosmed */
+.sosmed-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Gaya dasar semua tombol agar tulisan putih dan ada jarak */
+.sosmed-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white !important; /* Paksa tulisan jadi putih */
+    margin: 5px;
+}
+
+/* WARNA KHUSUS (Pastikan ada titik di depannya!) */
+.wa { background-color: #25d366 !important; } /* Hijau WA */
+.ig { background-color: #e1306c !important; } /* Pink IG */
+.fb { background-color: #1877f2 !important; } /* Biru FB */
+.yt { background-color: #ff0000 !important; } /* Merah YT */
+
+.sosmed-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
