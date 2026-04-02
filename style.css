@@ -101,3 +101,126 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+/* Gaya Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky; /* Membuat menu nempel di atas saat di-scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2980b9; /* Berubah warna saat disentuh */
+}
+
+/* Agar scroll ke bagian ID terasa halus (tidak langsung loncat) */
+html {
+    scroll-behavior: smooth;
+}
+.game-container {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px dashed #2980b9;
+}
+
+#input-tebakan {
+    padding: 10px;
+    font-size: 11px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+#pesan-game {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #e67e22;
+}
+#btn-reset {
+    background-color: #2c3e50 !important; /* Warna biru gelap */
+    color: white !important;             /* Tulisan warna putih */
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; /* Tetap sembunyi sampai game selesai */
+}
+
+/* Efek saat kursor menyentuh tombol */
+#btn-reset:hover {
+    background-color: #34495e !important;
+    transform: scale(1.05);
+}
+#sisa-nyawa {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c0392b; /* Warna merah gelap */
+    margin-bottom: 10px;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.skill-box {
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100px;
+    transition: 0.3s;
+}
+.skill-box:hover { transform: translateY(-10px); }
+.skill-icon {
+    font-size: 50px; /* Membuat emoji jadi besar seperti gambar */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.skill-box {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 120px;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    border-color: #2980b9;
+}

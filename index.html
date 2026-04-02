@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,7 +7,14 @@ html
     <link rel="stylesheet" href="style.css"
 </head>
 <body>
-
+<nav class="navbar">
+    <div class="nav-logo">IMMAM SOLIHIN</div>
+    <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
     <header>
         <img src="profile.jpg" alt="Foto profile Saya" class="foto-profile"
         <h1>Halo! Nama Saya IMMAM SOLIHIN </h1>
@@ -16,7 +22,7 @@ html
         <button id="btn-mode" class="tombol-interktif">kenalan yuk!</button>
     </header>
 
-    <section>
+    <section id="tentang">
         <h2>Tentang Saya</h2>
         <div class="tentang-konten">
         <p>Halo! Saya <strong>Immam Solihin</strong>, seorang antusias teknologi yang sedang menempuh perjalanan untuk menjadi seorang <strong>Fullstack Web Developer</strong>. Saya memiliki minat besar dalam membangun solusi digital yang kreatif dan fungsional.</p>
@@ -26,8 +32,25 @@ html
         <p>Selain belajar coding, saya juga aktif mengikuti perkembangan desain UI/UX untuk memastikan website yang saya bangun tidak hanya bekerja dengan baik, tetapi juga nyaman digunakan oleh pengguna.</p>
     </div>
     </section>
-
-    <section>
+<section id="skills">
+    <h2>Keahlian Saya</h2>
+    <div class="skills-container">
+        <div class="skill-box">
+            <span class="skill-icon">🌐</span>
+            <p>HTML5</p>
+        </div>
+        <div class="skill-box">
+            <span class="skill-icon">🎨</span>
+            <p>CSS3</p>
+        </div>
+        <div class="skill-box">
+            <span class="skill-icon">⚡</span>
+            <p>JavaScript</p>
+        </div>
+    </div>
+</section>
+</section>
+    <section id="proyek">
         <h2>Skill yang Sedang Dipelajari</h2>
         <ul>
             <li>HTML (Struktur Website)</li>
@@ -35,6 +58,18 @@ html
             <li>JavaScript (Interaksi Website)</li>
         </ul>
     </section>
+    <section id="game">
+    <h2>Mini Game: Tebak Angka (1-100)</h2>
+    <div class="game-container">
+        <p>Saya sedang memikirkan angka antara 1 sampai 100. Coba tebak!</p>
+        <!-- Tambahkan baris sisa nyawa di bawah instruksi angka 1-100 -->
+        <p id="sisa-nyawa">Kesempatan: 10</p>
+        <input type="number" id="input-tebakan" placeholder="Masukkan angka...">
+        <button onclick="cekTebakan()" class="tombol-interaktif">Tebak!</button>
+        <p id="pesan-game"></p>
+        <button onclick="resetGame()" id="btn-reset" style="display:none;" class="sosmed-link gh">Main Lagi</button>
+    </div>
+</section>
     <section id="kontak">
     <h2>Hubungi Saya</h2>
     <p>Mari terhubung! Anda bisa menyapa saya melalui media sosial di bawah ini:</p>
@@ -47,7 +82,8 @@ html
     </div>
 </section>
     <footer>
-        <p>&copy; 2024 Portofolio Saya</p>
+    <hr>
+    <p>&copy; 2026 Immam Solihin. Dibuat dengan ❤️ sambil belajar Coding.</p>
     </footer>
     <script src="script.js"></script>
 </body>
